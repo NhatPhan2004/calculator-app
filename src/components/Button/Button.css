@@ -1,0 +1,26 @@
+.btn {
+  height: 65px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px #999;
+  transition: all 0.1s;
+}
+.btn:active {
+  box-shadow: 0 1px #666;
+  transform: translateY(3px);
+}
+.btn-white {
+  background-color: #ffffff;
+  color: #000;
+}
+.btn-gray {
+  background-color: #cecdcd;
+  color: #000;
+}
+.btn-orange {
+  background-color: #f39237;
+  color: #f5f4f4;
+}

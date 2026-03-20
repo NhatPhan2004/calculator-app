@@ -1,0 +1,18 @@
+.calculator-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 95vh;
+}
+.calculator-body {
+  width: 340px;
+  background-color: #4d4d50;
+  padding: 25px;
+  border-radius: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}

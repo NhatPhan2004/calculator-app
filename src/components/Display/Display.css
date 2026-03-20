@@ -1,0 +1,14 @@
+.display-container {
+  background-color: #d1d4d1;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: right;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+.display-value {
+  font-size: 3rem;
+  font-family: "Courier New", Courier, monospace;
+  color: #1a1a1a;
+}
