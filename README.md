@@ -1,18 +1,47 @@
-# React + Vite
+# 🧮 Modern Classic Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Một ứng dụng máy tính trực tuyến được xây dựng bằng ReactJS Basics, mô phỏng thiết kế cổ điển với tư duy lập trình hiện đại. Dự án tập trung vào việc tối ưu cấu trúc thư mục (Scalable Architecture) và trải nghiệm người dùng (UX).
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Frontend: [https://calculator-app-react-basics.vercel.app]
 
-## React Compiler
+## 🚀 Tính năng nổi bật
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Logic tính toán chính xác: Xử lý lỗi số thập phân (Floating Point Error) đặc trưng của JavaScript.
 
-Note: This will impact Vite dev & build performances.
+Giao diện 3D Neumorphism: Hiệu ứng nút bấm "lún" và màn hình LCD chân thực.
 
-## Expanding the ESLint configuration
+Thiết kế linh hoạt (Responsive): Hiển thị tốt trên cả máy tính và điện thoại.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Clean Code: Sử dụng Custom Hooks (useCalculator) để tách biệt logic và giao diện.
+
+Xử lý thông minh: Tự động sửa lỗi khi bấm nhiều phép tính liên tiếp (Operator Swapping).
+
+## 🛠 Công nghệ sử dụng
+
+Frontend: ReactJS (Vite)
+
+Styling: CSS3 (Standard CSS với tư duy Component-based)
+
+State Management: React Hooks (useState)
+
+Tools: ESLint, Prettier
+
+## 💻 Chạy dự án
+
+cd calculator-app
+
+npm install
+
+npm run dev
+
+## 🧠 Tư duy phát triển
+
+Dự án này không chỉ đơn thuần là một cái máy tính, nó là minh chứng cho việc áp dụng các nguyên lý lập trình:
+
+Separation of Concerns: Tách biệt logic xử lý số học khỏi UI.
+
+Reusability: Các component như Button có thể tái sử dụng cho các dự án khác.
+
+Edge Case Handling: Xử lý các trường hợp đặc biệt như chia cho 0, xóa ký tự (DEL), đảo dấu (+/-)...

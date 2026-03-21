@@ -34,19 +34,27 @@ const useCalculator = () => {
 
       case "=":
         try {
-          let lastChar = displayValue.slice(-1);
-          let cleanExpression = displayValue;
-          if (operators.includes(lastChar)) {
-            cleanExpression = displayValue.slice(0, -1);
+          let str = displayValue;
+
+          str = str.replace(/[+\-x÷]+$/, "");
+
+          const finalExpression = str
+            .replace(/x/g, "*")
+            .replace(/×/g, "*")
+            .replace(/÷/g, "/")
+            .replace(/:/g, "/");
+
+          if (!finalExpression || finalExpression === "0") return;
+
+          const result = eval(finalExpression);
+
+          if (!isFinite(result)) {
+            setDisplayValue("Infinity");
+          } else {
+            setDisplayValue(String(parseFloat(result.toFixed(8))));
           }
-
-          const expression = cleanExpression
-            .replaceAll("x", "*")
-            .replaceAll("÷", "/");
-
-          const result = eval(expression);
-          setDisplayValue(String(Number(result.toFixed(8))));
-        } catch {
+        } catch (err) {
+          console.error("Lỗi Eval:", err);
           setDisplayValue("Error");
         }
         break;

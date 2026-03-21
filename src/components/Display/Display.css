@@ -4,8 +4,10 @@
   border-radius: 10px;
   text-align: right;
   margin-bottom: 20px;
+  border: 2px solid #b8bbb8;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   font-weight: bold;
+  overflow: hidden;
 }
 .display-value {
   font-size: 3rem;

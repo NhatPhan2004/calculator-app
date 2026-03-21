@@ -6,7 +6,7 @@
   font-weight: bold;
   cursor: pointer;
   box-shadow: 0 4px #999;
-  transition: all 0.1s;
+  transition: all 0.05s;
 }
 .btn:active {
   box-shadow: 0 1px #666;
