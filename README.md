@@ -45,3 +45,9 @@ Separation of Concerns: Tách biệt logic xử lý số học khỏi UI.
 Reusability: Các component như Button có thể tái sử dụng cho các dự án khác.
 
 Edge Case Handling: Xử lý các trường hợp đặc biệt như chia cho 0, xóa ký tự (DEL), đảo dấu (+/-)...
+
+## Author
+
+Name: PHAN NHU NHAT
+
+GitHub: https://github.com/NhatPhan2004
